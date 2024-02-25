@@ -1,0 +1,9 @@
+includes:
+  - ./src/configs/recommended.neon
+
+parameters:
+  checkTooWideReturnTypesInProtectedAndPublicMethods: false
+
+  paths:
+    - ./src
+    - ./tests

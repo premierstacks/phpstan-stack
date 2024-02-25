@@ -1,0 +1,75 @@
+{
+  "name": "tomchochola/phpstan-config",
+  "description": "phpstan config",
+  "type": "library",
+  "keywords": [
+    "tomchochola",
+    "phpstan-config"
+  ],
+  "homepage": "https://github.com/tomchochola/phpstan-config",
+  "readme": "./README.md",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Tomáš Chochola",
+      "email": "chocholatom1997@gmail.com",
+      "homepage": "https://github.com/tomchochola",
+      "role": "Author"
+    }
+  ],
+  "support": {
+    "email": "chocholatom1997@gmail.com",
+    "issues": "https://github.com/tomchochola/phpstan-config/issues",
+    "source": "https://github.com/tomchochola/phpstan-config.git",
+    "docs": "https://github.com/tomchochola/phpstan-config"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/tomchochola"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "phpstan/extension-installer": "@stable",
+    "phpstan/phpstan": "@stable",
+    "phpstan/phpstan-deprecation-rules": "@stable",
+    "phpstan/phpstan-mockery": "@stable",
+    "phpstan/phpstan-phpunit": "@stable",
+    "phpstan/phpstan-strict-rules": "@stable",
+    "phpstan/phpstan-symfony": "@stable"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable",
+    "tomchochola/php-cs-fixer-config": "@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tomchochola\\PhpstanConfig\\": "./src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "./tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/tomchochola/php-cs-fixer-config.git"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    },
+    "preferred-install": "dist",
+    "audit": {
+      "abandoned": "fail"
+    },
+    "optimize-autoloader": true,
+    "platform-check": true
+  }
+}

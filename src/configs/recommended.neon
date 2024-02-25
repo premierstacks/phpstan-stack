@@ -1,0 +1,14 @@
+includes:
+  - phar://phpstan.phar/conf/bleedingEdge.neon
+
+parameters:
+  level: max
+  checkMissingCallableSignature: true
+  checkTooWideReturnTypesInProtectedAndPublicMethods: true
+  checkUninitializedProperties: true
+  reportAlwaysTrueInLastCondition: true
+  checkBenevolentUnionTypes: true
+  checkImplicitMixed: true
+  checkMissingOverrideMethodAttribute: true
+  treatPhpDocTypesAsCertain: false
+  tipsOfTheDay: false
