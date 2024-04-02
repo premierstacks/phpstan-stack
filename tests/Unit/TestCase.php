@@ -20,7 +20,11 @@
 
 declare(strict_types=1);
 
-use Tomchochola\PhpCsFixerConfig\Configs\Tomchochola;
-use Tomchochola\PhpCsFixerConfig\Preset;
+namespace Tests\Unit;
 
-return Preset::make(__DIR__, Tomchochola::config());
+use PHPUnit\Framework\TestCase as VendorTestCase;
+
+/**
+ * @internal
+ */
+abstract class TestCase extends VendorTestCase {}

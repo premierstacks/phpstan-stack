@@ -13,14 +13,13 @@
   beStrictAboutChangesToGlobalState="true"
   beStrictAboutOutputDuringTests="true"
   beStrictAboutTestsThatDoNotTestAnything="true"
-  beStrictAboutCoverageMetadata="true"
   requireCoverageMetadata="true"
   enforceTimeLimit="true"
   defaultTimeLimit="1"
 >
   <testsuites>
-    <testsuite name="default">
-      <directory>./tests</directory>
+    <testsuite name="unit">
+      <directory>./tests/Unit</directory>
     </testsuite>
   </testsuites>
   <source>
