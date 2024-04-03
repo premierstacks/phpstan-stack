@@ -77,7 +77,7 @@ development:
 .PHONY: staging
 staging:
 	${MAKE_COMPOSER} install -a --no-dev
-	npm install --install-links --include prod --omit dev --include peer --include optional
+	npm install --install-links --include prod --include dev --include peer --include optional
 
 .PHONY: production
 production: staging
