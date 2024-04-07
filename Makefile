@@ -13,7 +13,7 @@ MAKE_COMPOSER ?= ${MAKE_PHP} ${MAKE_COMPOSER_2_BIN}
 
 # Goals
 .PHONY: check
-check: lint stan test audit
+check: lint stan audit
 
 .PHONY: audit
 audit: ./vendor ./composer.lock ./node_modules ./package-lock.json

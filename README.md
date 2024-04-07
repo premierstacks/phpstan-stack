@@ -90,7 +90,7 @@ Add the following to your `composer.json`:
 
 Then, execute:
 
-```shellell
+```shell
 composer require --dev tomchochola/phpstan-config:@dev
 ```
 
