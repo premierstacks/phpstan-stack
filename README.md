@@ -1,4 +1,4 @@
-# [PHPStan Config](https://github.com/tomchochola/phpstan-config) by [Tomáš Chochola](https://github.com/tomchochola)
+# [PHPStan Config](https://github.com/premierstacks/phpstan-config) by [Tomáš Chochola](https://github.com/tomchochola)
 
 Boost PHP code quality with our PHPStan Config: integrating the latest rules and extensions for comprehensive analysis. Designed for seamless setup and continuous improvement.
 
@@ -82,8 +82,8 @@ Add the following to your `composer.json`:
 ```json
 "repositories": [
     {
-        "type": "vcs",
-        "url": "https://github.com/tomchochola/phpstan-config.git"
+        "type": "git",
+        "url": "https://github.com/premierstacks/phpstan-config.git"
     }
 ]
 ```
@@ -91,7 +91,7 @@ Add the following to your `composer.json`:
 Then, execute:
 
 ```shell
-composer require --dev tomchochola/phpstan-config:@dev
+composer require --dev premierstacks/phpstan-config:@dev
 ```
 
 ### 3️⃣ Configuration
@@ -100,7 +100,7 @@ Set up your `phpstan.neon` as follows:
 
 ```js
 includes:
-  - ./vendor/tomchochola/phpstan-config/src/configs/recommended.neon
+  - ./vendor/premierstacks/phpstan-config/src/configs/recommended.neon
 
 parameters:
   paths:
