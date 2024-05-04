@@ -1,9 +1,7 @@
 includes:
-  - ./src/configs/recommended.neon
+  - ./src/configs/premierstacks.neon
 
 parameters:
-  checkTooWideReturnTypesInProtectedAndPublicMethods: false
-
   paths:
     - ./src
     - ./tests
