@@ -3,7 +3,8 @@
   "description": "phpstan config",
   "keywords": [
     "premierstacks",
-    "phpstan-config"
+    "phpstan-config",
+    "tomchochola"
   ],
   "homepage": "https://github.com/premierstacks/phpstan-config",
   "bugs": {

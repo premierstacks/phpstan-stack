@@ -4,7 +4,8 @@
   "type": "library",
   "keywords": [
     "premierstacks",
-    "phpstan-config"
+    "phpstan-config",
+    "tomchochola"
   ],
   "homepage": "https://github.com/premierstacks/phpstan-config",
   "readme": "./README.md",
