@@ -1,13 +1,13 @@
 {
-  "name": "premierstacks/phpstan-config",
-  "description": "phpstan config",
+  "name": "premierstacks/phpstan-stack",
+  "description": "phpstan stack",
   "type": "library",
   "keywords": [
     "premierstacks",
-    "phpstan-config",
+    "phpstan-stack",
     "tomchochola"
   ],
-  "homepage": "https://github.com/premierstacks/phpstan-config",
+  "homepage": "https://github.com/premierstacks/phpstan-stack",
   "readme": "./README.md",
   "license": "proprietary",
   "authors": [
@@ -20,9 +20,9 @@
   ],
   "support": {
     "email": "chocholatom1997@gmail.com",
-    "issues": "https://github.com/premierstacks/phpstan-config/issues",
-    "source": "https://github.com/premierstacks/phpstan-config.git",
-    "docs": "https://github.com/premierstacks/phpstan-config"
+    "issues": "https://github.com/premierstacks/phpstan-stack/issues",
+    "source": "https://github.com/premierstacks/phpstan-stack.git",
+    "docs": "https://github.com/premierstacks/phpstan-stack"
   },
   "funding": [
     {
@@ -47,11 +47,11 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^11.1",
-    "premierstacks/php-cs-fixer-config": "@dev"
+    "premierstacks/php-cs-fixer-stack": "@dev"
   },
   "autoload": {
     "psr-4": {
-      "Premierstacks\\PhpstanConfig\\": "./src"
+      "Premierstacks\\PhpstanStack\\": "./src"
     }
   },
   "autoload-dev": {
@@ -64,7 +64,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/premierstacks/php-cs-fixer-config.git"
+      "url": "https://github.com/premierstacks/php-cs-fixer-stack.git"
     }
   ],
   "config": {

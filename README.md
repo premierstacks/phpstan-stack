@@ -1,20 +1,20 @@
-# [PHPStan Config](https://github.com/premierstacks/phpstan-config) by [Tomáš Chochola](https://github.com/tomchochola)
+# [PHPStan Stack](https://github.com/premierstacks/phpstan-stack) by [Tomáš Chochola](https://github.com/tomchochola)
 
-Boost PHP code quality with our PHPStan Config: integrating the latest rules and extensions for comprehensive analysis. Designed for seamless setup and continuous improvement.
+Boost PHP code quality with our PHPStan Stack: integrating the latest rules and extensions for comprehensive analysis. Designed for seamless setup and continuous improvement.
 
-Our PHPStan Config provides a thorough suite of configurations, enhancing your PHP projects with advanced analysis capabilities. Crafted for effortless integration, it allows for immediate enhancement of code quality with minimal setup, aligning your projects with PHP development best practices. This configuration, continuously updated with the latest PHPStan rules and official extensions, ensures your codebase remains robust, efficient, and in compliance with modern standards. It's an essential tool for developers committed to maintaining high-quality, professional-standard PHP code.
+Our PHPStan Stack provides a thorough suite of configurations, enhancing your PHP projects with advanced analysis capabilities. Crafted for effortless integration, it allows for immediate enhancement of code quality with minimal setup, aligning your projects with PHP development best practices. This configuration, continuously updated with the latest PHPStan rules and official extensions, ensures your codebase remains robust, efficient, and in compliance with modern standards. It's an essential tool for developers committed to maintaining high-quality, professional-standard PHP code.
 
-## 👌 Top Reasons to Opt for Our Premium PHPStan Config
+## 👌 Top Reasons to Opt for Our Premium PHPStan Stack
 
-Incorporating our Premium PHPStan Config into your PHP projects not only enhances code analysis and quality assurance but also aligns your work with the best practices in PHP development, setting a new standard for excellence.
+Incorporating our Premium PHPStan Stack into your PHP projects not only enhances code analysis and quality assurance but also aligns your work with the best practices in PHP development, setting a new standard for excellence.
 
 ### ⏱️ Setup in Just 5 Minutes
 
-Begin enhancing your PHP code quality instantly with our PHPStan Config. Designed for quick and easy integration, this config sets you on the path to superior code quality without any time-consuming setup processes.
+Begin enhancing your PHP code quality instantly with our PHPStan Stack. Designed for quick and easy integration, this config sets you on the path to superior code quality without any time-consuming setup processes.
 
 ### 🕒 Hundreds of Hours of Research, So You Don't Have To
 
-Our PHPStan Config is the product of exhaustive research and ongoing dedication to PHP code quality. With this tool, you're leveraging countless hours of expert analysis and rule refinement to ensure your projects adhere to the highest standards.
+Our PHPStan Stack is the product of exhaustive research and ongoing dedication to PHP code quality. With this tool, you're leveraging countless hours of expert analysis and rule refinement to ensure your projects adhere to the highest standards.
 
 ### 🎚️ Minimal Setup, Maximum Code Quality
 
@@ -26,15 +26,15 @@ No matter your experience level with PHPStan or static analysis tools, our confi
 
 ### 🔄 Continuously Updated
 
-Stay at the forefront of PHP code analysis with a configuration that evolves. Our PHPStan Config is regularly updated to include the latest PHPStan rules and extensions, keeping your code base secure, efficient, and in compliance with modern PHP standards.
+Stay at the forefront of PHP code analysis with a configuration that evolves. Our PHPStan Stack is regularly updated to include the latest PHPStan rules and extensions, keeping your code base secure, efficient, and in compliance with modern PHP standards.
 
 ### ⚔️ Battle-Tested Reliability
 
-Trust in a PHPStan Config that has been rigorously tested across a wide array of PHP projects. This ensures that no matter the complexity or scale of your project, our config provides reliable and consistent code analysis, helping you to maintain and improve code quality over time.
+Trust in a PHPStan Stack that has been rigorously tested across a wide array of PHP projects. This ensures that no matter the complexity or scale of your project, our config provides reliable and consistent code analysis, helping you to maintain and improve code quality over time.
 
 ### 🏆 Premier Quality Guarantee
 
-Opting for our PHPStan Config signals your commitment to coding excellence. This tool is more than just a set of rules; it's a comprehensive solution that elevates the quality of your PHP projects to the highest professional standards.
+Opting for our PHPStan Stack signals your commitment to coding excellence. This tool is more than just a set of rules; it's a comprehensive solution that elevates the quality of your PHP projects to the highest professional standards.
 
 ## 🛡️ License & Usage
 
@@ -83,7 +83,7 @@ Add the following to your `composer.json`:
 "repositories": [
     {
         "type": "git",
-        "url": "https://github.com/premierstacks/phpstan-config.git"
+        "url": "https://github.com/premierstacks/phpstan-stack.git"
     }
 ]
 ```
@@ -91,7 +91,7 @@ Add the following to your `composer.json`:
 Then, execute:
 
 ```shell
-composer require --dev premierstacks/phpstan-config:@dev
+composer require --dev premierstacks/phpstan-stack:@dev
 ```
 
 ### 3️⃣ Configuration
@@ -100,7 +100,7 @@ Set up your `phpstan.neon` as follows:
 
 ```js
 includes:
-  - ./vendor/premierstacks/phpstan-config/src/configs/recommended.neon
+  - ./vendor/premierstacks/phpstan-stack/src/configs/recommended.neon
 
 parameters:
   paths:
