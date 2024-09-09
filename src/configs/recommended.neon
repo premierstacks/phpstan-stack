@@ -12,3 +12,6 @@ parameters:
   checkMissingOverrideMethodAttribute: true
   treatPhpDocTypesAsCertain: false
   tipsOfTheDay: false
+  reportPossiblyNonexistentGeneralArrayOffset: true
+  reportPossiblyNonexistentConstantArrayOffset: true
+  reportAnyTypeWideningInVarTag: true
