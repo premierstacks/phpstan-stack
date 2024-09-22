@@ -1,0 +1,7 @@
+includes:
+  - ./vendor/premierstacks/phpstan-stack/src/configs/recommended.neon
+
+parameters:
+  paths:
+    - ./src
+    - ./tests

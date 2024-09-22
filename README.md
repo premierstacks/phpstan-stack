@@ -1,40 +1,38 @@
 # [PHPStan Stack](https://github.com/premierstacks/phpstan-stack) by [Tomáš Chochola](https://github.com/tomchochola)
 
-Boost PHP code quality with our PHPStan Stack: integrating the latest rules and extensions for comprehensive analysis. Designed for seamless setup and continuous improvement.
+A premium, preconfigured PHPStan stack that saves developers time and ensures top-tier code quality without manual setup. Ideal for high-stakes environments in individual, corporate, and government projects.
 
-Our PHPStan Stack provides a thorough suite of configurations, enhancing your PHP projects with advanced analysis capabilities. Crafted for effortless integration, it allows for immediate enhancement of code quality with minimal setup, aligning your projects with PHP development best practices. This configuration, continuously updated with the latest PHPStan rules and official extensions, ensures your codebase remains robust, efficient, and in compliance with modern standards. It's an essential tool for developers committed to maintaining high-quality, professional-standard PHP code.
+## 💡 Idea Behind Premierstacks
 
-## 👌 Top Reasons to Opt for Our Premium PHPStan Stack
+Premierstacks is a comprehensive solution designed to cover both the development environment and the runtime provisioning/release process to production servers.
 
-Incorporating our Premium PHPStan Stack into your PHP projects not only enhances code analysis and quality assurance but also aligns your work with the best practices in PHP development, setting a new standard for excellence.
+It includes everything from basic project structures to configurations for unit tests, static analysis, linters, automatic code fixers, and compilation or transpilation. Premierstacks ensures that your entire workflow, from development to production deployment, operates smoothly.
 
-### ⏱️ Setup in Just 5 Minutes
+With a single license, you gain access to multiple libraries and guides that allow you to focus on business logic while Premierstacks handles both development and runtime environments.
 
-Begin enhancing your PHP code quality instantly with our PHPStan Stack. Designed for quick and easy integration, this config sets you on the path to superior code quality without any time-consuming setup processes.
+This software is proprietary and designed for serious developers who value precision and professionalism. Ensure compliance by securing your license today.
 
-### 🕒 Hundreds of Hours of Research, So You Don't Have To
+## ⚡ Why Choose This Solution?
 
-Our PHPStan Stack is the product of exhaustive research and ongoing dedication to PHP code quality. With this tool, you're leveraging countless hours of expert analysis and rule refinement to ensure your projects adhere to the highest standards.
+- **Premier Quality**
 
-### 🎚️ Minimal Setup, Maximum Code Quality
+  Crafted for discerning developers and teams aiming for the highest standards.
 
-Dive into your projects with a configuration that's ready to go out of the box. Our streamlined setup gets you started with advanced code analysis with minimal fuss, ensuring your focus remains on development, not configuration.
+- **Expertly Crafted**
 
-### 📘 Zero Expertise Required
+  Built by professionals after hundreds of hours of research and testing.
 
-No matter your experience level with PHPStan or static analysis tools, our configuration is designed to be accessible and user-friendly. This inclusivity allows developers of all skill levels to improve their code quality effortlessly.
+- **Production-Ready**
 
-### 🔄 Continuously Updated
+  Fully tested in real-world production environments.
 
-Stay at the forefront of PHP code analysis with a configuration that evolves. Our PHPStan Stack is regularly updated to include the latest PHPStan rules and extensions, keeping your code base secure, efficient, and in compliance with modern PHP standards.
+- **Efficient Setup**
 
-### ⚔️ Battle-Tested Reliability
+  Get up and running with minimal effort and immediate results.
 
-Trust in a PHPStan Stack that has been rigorously tested across a wide array of PHP projects. This ensures that no matter the complexity or scale of your project, our config provides reliable and consistent code analysis, helping you to maintain and improve code quality over time.
+- **Regular Updates**
 
-### 🏆 Premier Quality Guarantee
-
-Opting for our PHPStan Stack signals your commitment to coding excellence. This tool is more than just a set of rules; it's a comprehensive solution that elevates the quality of your PHP projects to the highest professional standards.
+  Stay aligned with the latest standards and best practices.
 
 ## 🛡️ License & Usage
 
@@ -42,111 +40,139 @@ Opting for our PHPStan Stack signals your commitment to coding excellence. This 
 
 [![License](https://img.shields.io/badge/License-©_Proprietary-blue.svg)](LICENSE.md)
 
-This software is the exclusive property of Tomáš Chochola, protected by copyright laws.<br />
-Although the source code may be accessible, it is not free for use without a valid license.<br />
-A valid license, obtainable through proper channels, is required for any software use.<br />
-For licensing or inquiries, please contact Tomáš Chochola or refer to the GitHub Sponsors page.
+This software is proprietary property of Tomáš Chochola and protected by copyright laws.<br />
+A valid license is required for any use or manipulation of the software or source code.<br />
+The full license terms are detailed in the LICENSE.md file within the source code repository.
 
-The full license terms are detailed in the LICENSE.md file within the source code repository.<br />
-The terms are subject to changes. Users are encouraged to review them periodically.
+One license grants you access to all Premierstacks products, ensuring a unified solution for your development and production needs.
 
-**Email:** <chocholatom1997@gmail.com><br />
-**Personal GitHub:** [https://github.com/tomchochola](https://github.com/tomchochola)<br />
-**Premierstacks GitHub:** [https://github.com/premierstacks](https://github.com/premierstacks)<br />
-**Sponsor & License:** [https://github.com/sponsors/tomchochola](https://github.com/sponsors/tomchochola)<br />
-**Premierstacks website**: [https://premierstacks.com](https://premierstacks.com)
+**Purchase a license here**: [GitHub Sponsors](https://github.com/sponsors/tomchochola)
 
-### Acquiring a License
+**See full terms in**: [LICENSE.md](LICENSE.md)
 
-To use this software, you must obtain a valid license available through a monthly subscription on the [Sponsor & License](https://github.com/sponsors/tomchochola).<br />
-This platform has been chosen for its reliability and ease of use, providing a secure and straightforward way to manage your subscription.
+## 📦 Configuration Presets
 
-## 🖍️ Highlights
+These configuration presets are designed to be extended in your PHPstan projects by using the `inclused` field in `phpstan.neon`.
 
-- **Advanced PHPStan Rules**: Harness the latest PHPStan rules to keep your projects at the cutting edge of PHP code analysis.
-- **All-in-One Extension Bundle**: Comes prepackaged with all official PHPStan extensions for comprehensive support across a multitude of frameworks and libraries.
-- **Streamlined Configuration**: The easy-to-integrate configuration system simplifies setup, allowing you to focus on development.
-- **Robust Code Analysis**: Empowers you to detect and resolve potential issues early, ensuring robust and reliable code.
-- **Continuous Code Improvement**: Encourages a culture of continuous improvement with regular updates and new features.
+- **[./vendor/premierstacks/phpstan-stack/src/configs/recommended.neon](/src/configs/recommended.neon)**
 
-## 🎨 Available Configuration Presets
+  The recommended configuration for PHPStan projects.
 
-Choose from a variety of preconfigured presets:
+- **[./vendor/premierstacks/phpstan-stack/src/configs/premierstacks.neon](/src/configs/premierstacks.neon)**
 
-- **recommended**: The go-to configuration for PHP projects, meticulously crafted to include bleeding-edge rules and checks for maximum code quality assurance.
+  The recommended configuration for **internal use** Premierstacks projects.
 
-## 🎬 Get Started
+## 🧩 Templates
 
-### 1️⃣ License Acquisition
+Explore the predefined templates for various configurations in the `/templates` directory. These templates provide quick-start setups for different environments.
 
-Secure your license at [Sponsor & License](https://github.com/sponsors/tomchochola).
+- **[/templates/recommended.neon](/templates/recommended.neon)**
 
-### 2️⃣ Package Installation
+  The recommended configuration for PHPStan projects.
 
-Add the following to your `composer.json`:
+- **[/templates/premierstacks.neon](/templates/premierstacks.neon)**
 
-```json
-"repositories": [
-    {
-        "type": "git",
-        "url": "https://github.com/premierstacks/phpstan-stack.git"
-    }
-]
+  The recommended configuration for **internal use** Premierstacks projects.
+
+## 🚀 Getting Started
+
+1️⃣ **Review the documentation and license**
+
+Ensure this package fits your needs and that you agree with the terms.
+
+2️⃣ **Purchase a license**
+
+Obtain a valid license through [GitHub Sponsors](https://github.com/sponsors/tomchochola).
+
+3️⃣ **Install the package**
+
+Setup composer repostory:
+
+```bash
+composer config repositories.premierstacks/phpstan-stack git https://github.com/premierstacks/phpstan-stack.git
 ```
 
-Then, execute:
+Install using composer:
 
-```shell
+```bash
 composer require --dev premierstacks/phpstan-stack:@dev
 ```
 
-### 3️⃣ Configuration
+4️⃣ **Select a template**
 
-Set up your `phpstan.neon` as follows:
+Choose one of the predefined configuration templates from the `/templates` directory that best suits your project’s needs. Use the `cp` command to copy it into your project as `phpstan.neon`:
 
-```js
-includes:
-  - ./vendor/premierstacks/phpstan-stack/src/configs/recommended.neon
-
-parameters:
-  paths:
-    - ./src
-    - ./tests
+```bash
+cp ./vendor/premierstacks/phpstan-stack/templates/recommended.neon ./phpstan.neon
+# or
+cp ./vendor/premierstacks/phpstan-stack/templates/premierstacks.neon ./phpstan.neon
 ```
 
-### 4️⃣ Attribution
+5️⃣ **CLI**
 
-Please ensure to manually give credits to the authors in your project documentation or wherever appropriate, as per the license agreement.
+Execute commands:
 
-### 5️⃣ Usage
-
-```shell
-# To analyze your project
-./vendor/bin/phpstan analyse
+```bash
+# Perform static analysis
+./venor/bin/phpstan analyse
 ```
 
-## The Author: Tomáš Chochola
+## 👤 The Author: Tomáš Chochola
 
-_Elite developer crafting exclusive, enterprise-grade software, professional packages, and premium templates to elevate your digital landscape._
+Tomáš Chochola is a leading software developer known for delivering precision-crafted, enterprise-grade solutions. With deep expertise in multiple cutting-edge technologies, Tomáš focuses on ensuring top-tier code quality and efficiency for every project.
 
-Tomáš Chochola is the creator and project visionary behind this project.<br />
-His expertise and innovative approach have been instrumental in shaping the project's direction and ensuring its success.<br />
-Tomáš Chochola's commitment to excellence and his passion for development are reflected in the quality and reliability of the project.
-
-**E-mail**: <chocholatom1997@gmail.com><br />
+**Email**: <chocholatom1997@gmail.com><br />
+**Premierstacks website**: [https://premierstacks.com](https://premierstacks.com)<br />
 **Personal GitHub**: [https://github.com/tomchochola](https://github.com/tomchochola)<br />
 **Premierstacks GitHub**: [https://github.com/premierstacks](https://github.com/premierstacks)<br />
-**Sponsor & License**: [https://github.com/sponsors/tomchochola](https://github.com/sponsors/tomchochola)<br />
-**Premierstacks website**: [https://premierstacks.com](https://premierstacks.com)
+**GitHub Sponsors**: [https://github.com/sponsors/tomchochola](https://github.com/sponsors/tomchochola)
 
-## 🌐 Discover Tomáš Chochola's GitHub Universe
+His areas of specialization include:
 
-Explore the boundless creativity and innovation in [Personal GitHub](https://github.com/tomchochola). As the epicenter of my digital creations, it offers an extensive collection of avant-garde software packages, refined libraries, and polished templates, meticulously crafted to enhance your development journey. Immerse yourself in a world where efficiency and elegance converge, and elevate your projects with tools that redefine excellence.
+- DevOps and AWS
+- PHP and Laravel
+- Secure coding practices
+- Code style and best practices
+- Helper functions and libraries
+- TypeScript, React, and Webpack
+- Reusable templates and configuration stacks
+- Development on Windows 11 and Ubuntu 22/24 (WSL2)
+- ESLint, Prettier, PHP CS Fixer, PostCSS, and Stylelint
 
-## 💰 Empower Innovation: Support and Subscribe
+## 💼 Hire Me
 
-Your support transcends mere contributions; it's the lifeblood of innovation and growth. By subscribing for premium access or becoming a sponsor, you directly contribute to the advancement of high-caliber software. Embrace the opportunity to be part of a visionary journey by visiting my [Sponsor & License](https://github.com/sponsors/tomchochola).
+Whether you need short-term code assistance, in-depth analysis, or help integrating premium packages, I'm available for collaboration. Let's take your project to the next level.
 
-## 🤝 Join Forces with Tomáš Chochola
+You can also support my work by becoming a sponsor through [GitHub Sponsors](https://github.com/sponsors/tomchochola).
 
-Embark on a collaborative venture with a developer whose passion for perfection knows no bounds. Whether it's for groundbreaking startups, global enterprises, or transformative government projects, my arsenal of skills is at your command. Let's merge visions and craftsmanship to forge software that stands a class apart. Connect with me at <chocholatom1997@gmail.com> for collaborations that transcend conventional boundaries.
+If you're interested in hiring me for any of the above or for solving IT issues, feel free to reach out. I'm open to collaboration, whether it's for new packages, ongoing projects, or quick IT fixes.
+
+## 🌳 Project Structure (Tree)
+
+Below is an example of the project structure you will receive upon purchasing the stack. This allows you to see what’s included and know exactly what you are paying for:
+
+```sh
+.
+├── AUTHORS.md
+├── LICENSE.md
+├── Makefile
+├── README.md
+├── composer.json
+├── eslint.config.js
+├── package.json
+├── phpstan.neon
+├── phpunit.xml
+├── prettier.config.js
+├── src
+│   └── configs
+│       ├── premierstacks.neon
+│       └── recommended.neon
+├── templates
+│   ├── premierstacks.neon
+│   └── recommended.neon
+└── tests
+    └── Unit
+        └── TestCase.php
+
+5 directories, 15 files
+```

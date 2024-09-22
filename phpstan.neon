@@ -1,7 +1,0 @@
-includes:
-  - ./src/configs/premierstacks.neon
-
-parameters:
-  paths:
-    - ./src
-    - ./tests
