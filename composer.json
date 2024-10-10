@@ -3,9 +3,9 @@
   "description": "premierstacks phpstan stack",
   "type": "library",
   "keywords": [
+    "tomchochola",
     "premierstacks",
-    "phpstan-stack",
-    "tomchochola"
+    "phpstan-stack"
   ],
   "homepage": "https://github.com/premierstacks/phpstan-stack",
   "readme": "./README.md",
