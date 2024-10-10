@@ -40,6 +40,9 @@ check: lint audit
 clean:
 	git clean -Xfd
 
+.PHONY: commit
+commit: tree fix fix fix check
+
 .PHONY: development
 development:
 
