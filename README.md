@@ -150,6 +150,10 @@ The following is a breakdown of the folder and file structure within this reposi
 
 ```bash
 .
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── .prettierignore
 ├── AUTHORS.md
 ├── LICENSE.md
 ├── Makefile
@@ -166,5 +170,5 @@ The following is a breakdown of the folder and file structure within this reposi
     ├── premierstacks.template
     └── recommended.template
 
-3 directories, 12 files
+3 directories, 16 files
 ```
