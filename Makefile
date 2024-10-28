@@ -5,12 +5,10 @@ SHELL := /bin/bash
 .DEFAULT_GOAL := never
 
 # Variables
-SOURCES = $(shell rg --files --hidden --iglob '!.git')
-
 MAKE_PHP_8_3_EXE ?= php8.3
 MAKE_COMPOSER_2_EXE ?= /usr/local/bin/composer
 
-MAKE_PHP ?= ${MAKE_PHP_8_3_EXE}
+MAKE_PHP ?= ${MAKE_PHP_8_3_EXE} -d zend.assertions=1
 MAKE_COMPOSER ?= ${MAKE_PHP} ${MAKE_COMPOSER_2_EXE}
 
 # Goals
@@ -18,118 +16,89 @@ MAKE_COMPOSER ?= ${MAKE_PHP} ${MAKE_COMPOSER_2_EXE}
 audit: audit_npm audit_composer
 
 .PHONY: audit_composer
-audit_composer: ./vendor/audit_stamp
-
-./vendor/audit_stamp: ./vendor ./composer.lock
+audit_composer: ./vendor/autoload.php ./composer.lock
 	${MAKE_COMPOSER} audit
 	${MAKE_COMPOSER} check-platform-reqs
 	${MAKE_COMPOSER} validate --strict --no-check-all
-	touch ./vendor/audit_stamp
 
 .PHONY: audit_npm
-audit_npm: ./node_modules/audit_stamp
-
-./node_modules/audit_stamp: ./node_modules ./package-lock.json
+audit_npm: ./node_modules ./package-lock.json
 	npm audit --audit-level info --include prod --include dev --include peer --include optional
-	touch ./node_modules/audit_stamp
 
 .PHONY: check
 check: lint audit
 
 .PHONY: clean
 clean:
+	rm -rf ./composer.lock
 	rm -rf ./node_modules
-	git clean -Xfd
+	rm -rf ./package-lock.json
+	rm -rf ./vendor
 
 .PHONY: commit
-commit: tree fix fix fix check
+commit: fix check
 
 .PHONY: development
-development:
-
-.PHONY: distclean
-distclean: clean
-	git clean -xfd
+development: local
 
 .PHONY: fix
 fix: fix_eslint fix_prettier
 
 .PHONY: fix_eslint
-fix_eslint: ./node_modules/eslint_fix_stamp
-
-./node_modules/eslint_fix_stamp: ./node_modules/.bin/eslint ./eslint.config.js ${SOURCES}
+fix_eslint: ./node_modules/.bin/eslint ./eslint.config.js
 	./node_modules/.bin/eslint --fix .
-	touch ./node_modules/eslint_fix_stamp
-	touch ./node_modules/eslint_lint_stamp
 
 .PHONY: fix_prettier
-fix_prettier: ./node_modules/prettier_fix_stamp
-
-./node_modules/prettier_fix_stamp: ./node_modules/.bin/prettier ./prettier.config.js ${SOURCES}
+fix_prettier: ./node_modules/.bin/prettier ./prettier.config.js
 	./node_modules/.bin/prettier -w .
-	touch ./node_modules/prettier_fix_stamp
-	touch ./node_modules/prettier_lint_stamp
 
 .PHONY: lint
 lint: lint_eslint lint_prettier
 
 .PHONY: lint_eslint
-lint_eslint: ./node_modules/eslint_lint_stamp
-
-./node_modules/eslint_lint_stamp: ./node_modules/.bin/eslint ./eslint.config.js ${SOURCES}
+lint_eslint: ./node_modules/.bin/eslint ./eslint.config.js
 	./node_modules/.bin/eslint .
-	touch ./node_modules/eslint_lint_stamp
-	touch ./node_modules/eslint_fix_stamp
 
 .PHONY: lint_prettier
-lint_prettier: ./node_modules/prettier_lint_stamp
-
-./node_modules/prettier_lint_stamp: ./node_modules/.bin/prettier ./prettier.config.js ${SOURCES}
+lint_prettier: ./node_modules/.bin/prettier ./prettier.config.js
 	./node_modules/.bin/prettier -c .
-	touch ./node_modules/prettier_lint_stamp
-	touch ./node_modules/prettier_fix_stamp
 
 .PHONY: local
-local:
+local: ./vendor/autoload.php
+	${MAKE_COMPOSER} dump-autoload -o --dev --strict-psr
 
 .PHONY: production
-production:
+production: staging
 
 .PHONY: staging
-staging:
+staging: local
+	${MAKE_COMPOSER} dump-autoload -a --no-dev --strict-psr
 
 .PHONY: testing
-testing:
-
-.PHONY: tree
-tree: ./README.md
-	sed -i '/## Tree/,$$d' README.md
-	echo '## Tree' >> README.md
-	echo '' >> README.md
-	echo 'The following is a breakdown of the folder and file structure within this repository. It provides an overview of how the code is organized and where to find key components.' >> README.md
-	echo '' >> README.md
-	echo '```bash' >> README.md
-	rg --files --hidden --iglob '!.git' | tree --fromfile >> README.md
-	echo '```' >> README.md
-
-.PHONY: update
-update: update_npm update_composer
-
-.PHONY: update_composer
-update_composer: ./composer.json
-	rm -rf ./vendor
-	${MAKE_COMPOSER} update
-
-.PHONY: update_npm
-update_npm: ./package.json
-	rm -rf ./node_modules
-	npm update --install-links --include prod --include dev --include peer --include optional
+testing: local
 
 # Dependencies
-./package-lock.json ./node_modules ./node_modules/.bin/eslint ./node_modules/.bin/prettier: ./package.json
-	rm -rf ./node_modules
+ ./node_modules ./node_modules/.bin/eslint ./node_modules/.bin/prettier: ./package-lock.json
 	npm install --install-links --include prod --include dev --include peer --include optional
+	touch ./package-lock.json
+	touch ./node_modules
+	touch ./node_modules/.bin/*
 
-./composer.lock ./vendor: ./composer.json
-	rm -rf ./vendor
+./package-lock.json: ./package.json
+	rm -rf ./node_modules
+	rm -rf ./package-lock.json
+	npm update --install-links --include prod --include dev --include peer --include optional
+	touch ./package-lock.json
+
+./vendor ./vendor/autoload.php: ./composer.lock
 	${MAKE_COMPOSER} install
+	touch ./composer.lock
+	touch ./vendor/autoload.php
+	touch ./vendor
+	touch ./vendor/bin/*
+
+./composer.lock: ./composer.json
+	rm -rf ./vendor
+	rm -rf ./composer.lock
+	${MAKE_COMPOSER} update
+	touch ./composer.lock
