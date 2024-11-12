@@ -32,17 +32,17 @@
   ],
   "require": {
     "phpstan/extension-installer": "^1.4",
-    "phpstan/phpstan": "^1.12",
-    "phpstan/phpstan-beberlei-assert": "^1.1",
-    "phpstan/phpstan-deprecation-rules": "^1.2",
-    "phpstan/phpstan-dibi": "^1.0",
-    "phpstan/phpstan-doctrine": "^1.5",
-    "phpstan/phpstan-mockery": "^1.1",
-    "phpstan/phpstan-nette": "^1.3",
-    "phpstan/phpstan-phpunit": "^1.4",
-    "phpstan/phpstan-strict-rules": "^1.6",
-    "phpstan/phpstan-symfony": "^1.4",
-    "phpstan/phpstan-webmozart-assert": "^1.2"
+    "phpstan/phpstan": "^2.0",
+    "phpstan/phpstan-beberlei-assert": "^2.0",
+    "phpstan/phpstan-deprecation-rules": "^2.0",
+    "phpstan/phpstan-dibi": "^2.0",
+    "phpstan/phpstan-doctrine": "^2.0",
+    "phpstan/phpstan-mockery": "^2.0",
+    "phpstan/phpstan-nette": "^2.0",
+    "phpstan/phpstan-phpunit": "^2.0",
+    "phpstan/phpstan-strict-rules": "^2.0",
+    "phpstan/phpstan-symfony": "^2.0",
+    "phpstan/phpstan-webmozart-assert": "^2.0"
   },
   "autoload": {
     "psr-4": {
