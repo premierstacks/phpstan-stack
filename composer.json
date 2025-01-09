@@ -4,12 +4,13 @@
   "type": "library",
   "keywords": [
     "tomchochola",
+    "tomaschochola",
     "premierstacks",
     "phpstan-stack"
   ],
   "homepage": "https://github.com/premierstacks/phpstan-stack",
   "readme": "./README.md",
-  "license": "proprietary",
+  "license": "CC-BY-ND-4.0",
   "authors": [
     {
       "name": "Tomáš Chochola",
