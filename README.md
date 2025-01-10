@@ -82,7 +82,7 @@ Ensure this package fits your needs and that you agree with the terms.
 Setup composer repostory:
 
 ```bash
-composer config repositories.premierstacks/phpstan-stack git https://github.com/premierstacks/phpstan-stack.git
+composer config repositories.premierstacks/phpstan-stack '{"type": "vcs", "url": "https://github.com/premierstacks/phpstan-stack.git", "no-api": true}'
 ```
 
 Install using composer:
