@@ -125,18 +125,18 @@ The following is a breakdown of the folder and file structure within this reposi
 
 ```bash
 .
+├── AUTHORS.md
+├── composer.json
 ├── .editorconfig
+├── eslint.config.js
 ├── .gitattributes
 ├── .gitignore
-├── .prettierignore
-├── AUTHORS.md
-├── LICENSE.md
+├── LICENSE
 ├── Makefile
-├── README.md
-├── composer.json
-├── eslint.config.js
 ├── package.json
 ├── prettier.config.js
+├── .prettierignore
+├── README.md
 ├── src
 │   └── configs
 │       ├── premierstacks.neon
@@ -145,5 +145,5 @@ The following is a breakdown of the folder and file structure within this reposi
     ├── premierstacks.template
     └── recommended.template
 
-3 directories, 16 files
+4 directories, 16 files
 ```
