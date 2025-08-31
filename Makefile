@@ -70,7 +70,7 @@ local: ./vendor/autoload.php
 	${MAKE_COMPOSER} run dump:development
 
 # Dependencies
- ./node_modules ./node_modules/.bin/eslint ./node_modules/.bin/prettier: ./package-lock.json
+./node_modules ./node_modules/.bin/eslint ./node_modules/.bin/prettier: ./package-lock.json
 	${MAKE_NPM} run npm:install
 	touch ./package-lock.json
 	touch ./node_modules
