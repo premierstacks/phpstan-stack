@@ -68,8 +68,8 @@ By protecting the core quality and unity of Premierstacks, this license ensures 
 
 Explore the predefined templates for various configurations in the [/templates](/templates) directory. These templates provide quick-start setups for different environments.
 
-**[/templates/recommended.template](/templates/recommended.template)**<br />
-**[/templates/premierstacks.template](/templates/premierstacks.template)**<br />
+**[/templates/recommended.neon](/templates/recommended.neon)**<br />
+**[/templates/premierstacks.neon](/templates/premierstacks.neon)**<br />
 
 ## Getting Started
 
@@ -98,9 +98,9 @@ Choose one of the predefined configuration templates from the [/templates](/temp
 Use the `cp` command to copy it into your project as `/phpstan.neon`:
 
 ```bash
-cp ./vendor/premierstacks/phpstan-stack/templates/recommended.template ./phpstan.neon
+cp ./vendor/premierstacks/phpstan-stack/templates/recommended.neon ./phpstan.neon
 # or for internal use
-cp ./vendor/premierstacks/phpstan-stack/templates/premierstacks.template ./phpstan.neon
+cp ./vendor/premierstacks/phpstan-stack/templates/premierstacks.neon ./phpstan.neon
 ```
 
 **4. CLI**
@@ -118,32 +118,3 @@ Execute commands:
 **👨 GitHub Personal: [https://github.com/tomchochola](https://github.com/tomchochola)**<br />
 **🏢 GitHub Organization: [https://github.com/premierstacks](https://github.com/premierstacks)**<br />
 **💰 GitHub Sponsors: [https://github.com/sponsors/tomchochola](https://github.com/sponsors/tomchochola)**<br />
-
-## Tree
-
-The following is a breakdown of the folder and file structure within this repository. It provides an overview of how the code is organized and where to find key components.
-
-```bash
-.
-├── AUTHORS.md
-├── composer.json
-├── .editorconfig
-├── eslint.config.js
-├── .gitattributes
-├── .gitignore
-├── LICENSE
-├── Makefile
-├── package.json
-├── prettier.config.js
-├── .prettierignore
-├── README.md
-├── src
-│   └── configs
-│       ├── premierstacks.neon
-│       └── recommended.neon
-└── templates
-    ├── premierstacks.template
-    └── recommended.template
-
-4 directories, 16 files
-```

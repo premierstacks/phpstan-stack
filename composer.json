@@ -5,7 +5,10 @@
   "keywords": [
     "tomchochola",
     "tomaschochola",
+    "Tomas Chochola",
+    "Tomáš Chochola",
     "premierstacks",
+    "Premierstacks",
     "phpstan-stack"
   ],
   "homepage": "https://github.com/premierstacks/phpstan-stack",
@@ -32,18 +35,18 @@
     }
   ],
   "require": {
-    "phpstan/extension-installer": "^1.4",
-    "phpstan/phpstan": "^2.0",
-    "phpstan/phpstan-beberlei-assert": "^2.0",
-    "phpstan/phpstan-deprecation-rules": "^2.0",
-    "phpstan/phpstan-dibi": "^2.0",
-    "phpstan/phpstan-doctrine": "^2.0",
-    "phpstan/phpstan-mockery": "^2.0",
-    "phpstan/phpstan-nette": "^2.0",
-    "phpstan/phpstan-phpunit": "^2.0",
-    "phpstan/phpstan-strict-rules": "^2.0",
-    "phpstan/phpstan-symfony": "^2.0",
-    "phpstan/phpstan-webmozart-assert": "^2.0"
+    "phpstan/extension-installer": "^1.4.3",
+    "phpstan/phpstan": "^2.1.22",
+    "phpstan/phpstan-beberlei-assert": "^2.0.1",
+    "phpstan/phpstan-deprecation-rules": "^2.0.3",
+    "phpstan/phpstan-dibi": "^2.0.0",
+    "phpstan/phpstan-doctrine": "^2.0.4",
+    "phpstan/phpstan-mockery": "^2.0.0",
+    "phpstan/phpstan-nette": "^2.0.4",
+    "phpstan/phpstan-phpunit": "^2.0.7",
+    "phpstan/phpstan-strict-rules": "^2.0.6",
+    "phpstan/phpstan-symfony": "^2.0.7",
+    "phpstan/phpstan-webmozart-assert": "^2.0.0"
   },
   "autoload": {
     "psr-4": {
@@ -65,5 +68,14 @@
       "abandoned": "fail"
     },
     "platform-check": true
+  },
+  "scripts": {
+    "composer:audit": "@composer audit",
+    "composer:platform": "@composer check-platform-reqs",
+    "composer:validate": "@composer validate --strict --no-check-all",
+    "composer:install": "@composer install",
+    "composer:update": "@composer update",
+    "dump:development": "@composer dump-autoload -o --dev --strict-psr",
+    "dump:production": "@composer dump-autoload -a --no-dev --strict-psr"
   }
 }
