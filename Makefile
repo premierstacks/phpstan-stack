@@ -34,7 +34,14 @@ check: lint audit
 
 .PHONY: clean
 clean:
-	rm -rf ./vendor ./node_modules ./composer.lock ./package-lock.json
+	rm -rf ./.php-cs-fixer.cache
+	rm -rf ./.phpunit.cache
+	rm -rf ./.phpunit.coverage
+	rm -rf ./.phpunit.result.cache
+	rm -rf ./composer.lock
+	rm -rf ./node_modules
+	rm -rf ./package-lock.json
+	rm -rf ./vendor
 
 .PHONY: fix
 fix: fix_eslint fix_prettier

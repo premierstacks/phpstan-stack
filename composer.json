@@ -71,10 +71,10 @@
   },
   "scripts": {
     "composer:audit": "@composer audit",
-    "composer:platform": "@composer check-platform-reqs",
-    "composer:validate": "@composer validate --strict --no-check-all",
     "composer:install": "@composer install",
+    "composer:platform": "@composer check-platform-reqs",
     "composer:update": "@composer update",
+    "composer:validate": "@composer validate --strict --no-check-all",
     "dump:development": "@composer dump-autoload -o --dev --strict-psr",
     "dump:production": "@composer dump-autoload -a --no-dev --strict-psr"
   }
